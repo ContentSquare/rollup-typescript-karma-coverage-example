@@ -1,0 +1,23 @@
+{
+  "name": "rollup-typescript-karma-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rollem && karma start && remap-istanbul -i testOutput/coverage/coverage-final.json -e '.spec.ts' -o testOutput/remapedCoverage -t html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "7.1.1",
+    "jasmine-core": "2.5.2",
+    "karma": "1.6.0",
+    "karma-coverage": "1.1.1",
+    "karma-jasmine": "1.1.0",
+    "karma-phantomjs-launcher": "1.0.4",
+    "karma-spec-reporter": "0.0.30",
+    "remap-istanbul": "0.9.5",
+    "rollem": "1.11.0",
+    "rollup-plugin-typescript": "0.8.1"
+  }
+}
