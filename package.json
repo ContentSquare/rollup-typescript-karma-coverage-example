@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "rollem && karma start && remap-istanbul -i testOutput/coverage/coverage-final.json -e '.spec.ts' -o testOutput/remapedCoverage -t html"
+    "test": "node rollupSpecs.js && karma start && remap-istanbul -i testOutput/coverage/coverage-final.json -e '.spec.ts' -o testOutput/remapedCoverage -t html"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,7 @@
     "karma-phantomjs-launcher": "1.0.4",
     "karma-spec-reporter": "0.0.30",
     "remap-istanbul": "0.9.5",
-    "rollem": "1.11.0",
+    "rollup": "0.41.6",
     "rollup-plugin-typescript": "0.8.1"
   }
 }
